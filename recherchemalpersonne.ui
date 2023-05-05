@@ -15,7 +15,7 @@
   </property>
   <property name="styleSheet">
    <string notr="true">#wrm{
-	background-image: url(:/t1/im3.jpeg);
+	background-image: url(im3.jpeg);
 }</string>
   </property>
   <widget class="QLabel" name="label">
