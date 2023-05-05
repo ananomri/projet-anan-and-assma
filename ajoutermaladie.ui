@@ -6,14 +6,32 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>498</width>
-    <height>359</height>
+    <width>917</width>
+    <height>461</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Form</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">#wm{
+	border-image: url(Corona.jpg) 0 0 0 0 stretch stretch;
+}</string>
+  </property>
   <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <spacer name="verticalSpacer">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>1</width>
+       <height>40</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
    <item>
     <widget class="QLabel" name="label">
      <property name="maximumSize">
@@ -22,13 +40,51 @@
        <height>50</height>
       </size>
      </property>
+     <property name="styleSheet">
+      <string notr="true">#wm{
+	border-image: url(im31.png) 0 0 0 0 stretch stretch;
+}</string>
+     </property>
      <property name="text">
-      <string>Ajouter uine nouvelle maladie</string>
+      <string>                                                                                          Ajouter uine nouvelle maladie</string>
      </property>
     </widget>
    </item>
    <item>
-    <layout class="QFormLayout" name="formLayout">
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="1" column="1">
+      <widget class="QLineEdit" name="nommldie"/>
+     </item>
+     <item row="3" column="0">
+      <widget class="QLabel" name="label_4">
+       <property name="text">
+        <string>nombre d'annee</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="1">
+      <widget class="QLineEdit" name="annee"/>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="label_3">
+       <property name="text">
+        <string>nom maladie</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="2">
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>1000</width>
+         <height>1000</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
      <item row="0" column="1">
       <widget class="QLineEdit" name="cin"/>
      </item>
@@ -39,26 +95,6 @@
        </property>
       </widget>
      </item>
-     <item row="1" column="0">
-      <widget class="QLabel" name="label_3">
-       <property name="text">
-        <string>nom maladie</string>
-       </property>
-      </widget>
-     </item>
-     <item row="1" column="1">
-      <widget class="QLineEdit" name="nommldie"/>
-     </item>
-     <item row="2" column="0">
-      <widget class="QLabel" name="label_4">
-       <property name="text">
-        <string>nombre d'annee</string>
-       </property>
-      </widget>
-     </item>
-     <item row="2" column="1">
-      <widget class="QLineEdit" name="annee"/>
-     </item>
     </layout>
    </item>
    <item>
@@ -68,8 +104,23 @@
      </property>
     </widget>
    </item>
+   <item>
+    <spacer name="verticalSpacer_2">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>40</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
   </layout>
  </widget>
- <resources/>
+ <resources>
+  <include location="ressource3/resources2.qrc"/>
+ </resources>
  <connections/>
 </ui>

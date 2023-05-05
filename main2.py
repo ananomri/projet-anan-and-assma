@@ -316,21 +316,21 @@ def affpersonne_decede():
 def affpersonne_non_decede():
     f = "personne.csv"
     d = loader.chargement(f)
-    w16.tabl.setRowCount(0)
+    w13.tabl.setRowCount(0)
     ligne = 0
     for e in d.items():
         if e[1]["decede"] == "0":
-            w16.tabl.insertRow(ligne)
-            w16.tabl.setItem(ligne, 0, QTableWidgetItem(e[0]))
-            w16.tabl.setItem(ligne, 1, QTableWidgetItem(e[1]["nom"]))
-            w16.tabl.setItem(ligne, 2, QTableWidgetItem(e[1]["prenom"]))
-            w16.tabl.setItem(ligne, 3, QTableWidgetItem(e[1]["tel"]))
-            w16.tabl.setItem(ligne, 4, QTableWidgetItem(e[1]["nationalite"]))
-            w16.tabl.setItem(ligne, 5, QTableWidgetItem(e[1]["age"]))
-            w16.tabl.setItem(ligne, 6, QTableWidgetItem(e[1]["jour"]))
-            w16.tabl.setItem(ligne, 7, QTableWidgetItem(e[1]["mois"]))
-            w16.tabl.setItem(ligne, 8, QTableWidgetItem(e[1]["annee"]))
-            w16.tabl.setItem(ligne, 9, QTableWidgetItem(e[1]["decede"]))
+            w13.tabl.insertRow(ligne)
+            w13.tabl.setItem(ligne, 0, QTableWidgetItem(e[0]))
+            w13.tabl.setItem(ligne, 1, QTableWidgetItem(e[1]["nom"]))
+            w13.tabl.setItem(ligne, 2, QTableWidgetItem(e[1]["prenom"]))
+            w13.tabl.setItem(ligne, 3, QTableWidgetItem(e[1]["tel"]))
+            w13.tabl.setItem(ligne, 4, QTableWidgetItem(e[1]["nationalite"]))
+            w13.tabl.setItem(ligne, 5, QTableWidgetItem(e[1]["age"]))
+            w13.tabl.setItem(ligne, 6, QTableWidgetItem(e[1]["jour"]))
+            w13.tabl.setItem(ligne, 7, QTableWidgetItem(e[1]["mois"]))
+            w13.tabl.setItem(ligne, 8, QTableWidgetItem(e[1]["annee"]))
+            w13.tabl.setItem(ligne, 9, QTableWidgetItem(e[1]["decede"]))
             ligne += 1
 ##########supprimerm###########
 
@@ -648,127 +648,128 @@ wnat = loadUi("afficheparnatio.ui")
 
 
 def afficherDeces():
-    w6.show()
+    w6.showMaximized()
     w6.affiche.clicked.connect(afficher_deces)
 
 
 def affnatio2():
     global countries
-    wnat.show()
+    wnat.showMaximized()
     fillComboBox(wnat.natComboBox, countries)
     wnat.affiche.clicked.connect(afficherMalParNat)
 
 
 def rechchaqueper():
-    w15.show()
+    w15.showMaximized()
     w15.affiche.clicked.connect(affpersonne_tel)
 
 
 def recherchenumtel():
-    w17.show()
+    w17.showMaximized()
     w17.affiche.clicked.connect(affpersonne_tel)
 
 
 def rechindica():
-    w14.show()
+    w14.showMaximized()
     w14.affiche.clicked.connect(affpersonne_non_decede)
 
 
 def persnondec():
-    w16.show()
+    w16.showMaximized()
     w16.affiche.clicked.connect(affpersonne_non_decede)
 
 
 def persdec():
-    w13.show()
+    w13.showMaximized()
     w13.affiche.clicked.connect(affpersonne_decede)
 
 
 def personnequarant():
-    w12.show()
+    w12.showMaximized()
     w12.affiche.clicked.connect(afficher_quarantaine)
 
 
 def mofifann():
-    w11.show()
+    w11.showMaximized()
     w11.modif.clicked.connect(modifier_nb_annees)
 
 
 def affnatiop():
     global e
     global countries
-    fillComboBox(wnat.nat, countries)
-    wnat.show()
+    fillComboBox(wnat.natComboBox, countries)
+    wnat.showMaximized()
     wnat.affiche.clicked.connect(affpersonne_nationalite)
 
 
 def modifadress():
-    w7.show()
+    w7.showMaximized()
     w7.modifier.clicked.connect(modifier_adresse)
 
 
 def modiftel():
-    w2.show()
+    w2.showMaximized()
     w2.modif.clicked.connect(modifier_tel)
 
 
 def recherchepmalpource():
-    w19.show()
+    w19.showMaximized()
     w19.affiche.clicked.connect(afficher_pourcentage)
 
 
 def recherchepmalper():
-    wrm.show()
+    wrm.showMaximized()
     wrm.affiche.clicked.connect(afficher_par_cin)
 
 
 def recherchepmal():
-    w18.show()
+    w18.showMaximized()
     w18.affiche.clicked.connect(afficher_par_nom_maladie)
 
 
 def suppmaladie():
-    ws.show()
+    ws.showMaximized()
     ws.supprimer.clicked.connect(supprimerm)
 
 
 def ajoutp():
-    w.show()
+    w.showMaximized()
     w.Ajouter.clicked.connect(ajouter)
 
 
 def afficherp():
-    waffp.show()
-    waffp.affper.clicked.connect(affpersonne)
+    waffp.showMaximized()
+    # waffp.affper.clicked.connect(affpersonne)
+    affpersonne()
 
 
 def ajoutm():
-    wm.show()
+    wm.showMaximized()
     wm.Ajouter.clicked.connect(ajouterm)
 
 
 def affichermaladies():
-    waffm.show()
+    waffm.showMaximized()
     waffm.affm.clicked.connect(afficherm)
 
 
 def suppressionp1():
-    wsp.show()
+    wsp.showMaximized()
     wsp.supprimer1.clicked.connect(supprimer_pers)
 
 
 def suppressionp2():
-    wsp2.show()
+    wsp2.showMaximized()
     wsp2.suppression.clicked.connect(supprimerp2)
 
 
 def suppressionp3():
-    wsp3.show()
+    wsp3.showMaximized()
     wsp3.supp3.clicked.connect(supprimerp3)
 
 
 def affrisque():
-    w5.show()
+    w5.showMaximized()
     w5.affiche.clicked.connect(afficher_personnes_a_risque)
 
 
