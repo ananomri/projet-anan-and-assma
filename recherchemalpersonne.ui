@@ -13,6 +13,11 @@
   <property name="windowTitle">
    <string>Form</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">#wrm{
+	background-image: url(:/t1/im3.jpeg);
+}</string>
+  </property>
   <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
@@ -93,6 +98,12 @@
    </property>
   </widget>
  </widget>
- <resources/>
+ <resources>
+  <include location="resouer.qrc"/>
+  <include location="resourcee.qrc"/>
+  <include location="resources.qrc"/>
+  <include location="resources2.qrc"/>
+  <include location="test.qrc"/>
+ </resources>
  <connections/>
 </ui>

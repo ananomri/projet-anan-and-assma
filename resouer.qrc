@@ -1,7 +1,4 @@
 <RCC>
-  <qresource prefix="exp">
-    <file>images.jfif</file>
-  </qresource>
   <qresource prefix="image"/>
   <qresource prefix="newPrefix">
     <file>ressource3/im7.jpg</file>
