@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>waff</class>
+ <widget class="QWidget" name="waff">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>809</width>
+    <height>240</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QPushButton" name="affper">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>10</y>
+     <width>113</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>afficher ler personnes</string>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="tabl">
+   <property name="geometry">
+    <rect>
+     <x>9</x>
+     <y>38</y>
+     <width>1091</width>
+     <height>192</height>
+    </rect>
+   </property>
+   <column>
+    <property name="text">
+     <string>CIN</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>NOM </string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>PRENOM</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>TEL</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>NATIONNALITE</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>AGE</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>jour</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>MOIS</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Annee</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>DECEDE</string>
+    </property>
+   </column>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

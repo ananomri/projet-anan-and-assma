@@ -1,0 +1,17 @@
+<RCC>
+  <qresource prefix="icones">
+    <file>im3.jpeg</file>
+    <file>backgr.jfif</file>
+    <file>supptell.png</file>
+    <file>suppppnatttionnnnaliteee.png</file>
+    <file>supppersonne.png</file>
+    <file>ajouter.png</file>
+    <file>ajoutermaladie.png</file>
+    <file>homemaladie.png</file>
+    <file>corona1.qrc.jpg</file>
+    <file>isim.png</file>
+    <file>menu.qrc.png</file>
+    <file>mise a jour.png</file>
+    <file>recherche.png</file>
+  </qresource>
+</RCC>

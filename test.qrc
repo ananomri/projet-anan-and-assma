@@ -1,0 +1,8 @@
+<RCC>
+  <qresource prefix="t1">
+    <file>im3.jpeg</file>
+    <file>corona.webp</file>
+    <file>ressource3/im5.jpg</file>
+    <file>supptell.png</file>
+  </qresource>
+</RCC>

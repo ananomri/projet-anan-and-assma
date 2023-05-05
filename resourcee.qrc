@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="iconne2"/>
+  <qresource prefix="newPrefix">
+    <file>corona.webp</file>
+  </qresource>
+</RCC>

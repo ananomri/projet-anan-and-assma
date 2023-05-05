@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>w14</class>
+ <widget class="QWidget" name="w14">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1120</width>
+    <height>632</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>150</y>
+     <width>191</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:14pt; color:#4db3c8;&quot;&gt;choisir l'indicatif&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="tabl">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>360</y>
+     <width>1211</width>
+     <height>301</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(196, 236, 255);</string>
+   </property>
+   <column>
+    <property name="text">
+     <string>CIN</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>nom</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>NOM</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>TEL</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>NATIONALITE</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Nouvelle colonne</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>JOUR</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>MOIS</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>ANNEE</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>DECEDE</string>
+    </property>
+   </column>
+  </widget>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>16777215</width>
+     <height>16777215</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>16777215</width>
+     <height>16777215</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-image: url(im3.jpeg);</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QLineEdit" name="indic">
+    <property name="geometry">
+     <rect>
+      <x>460</x>
+      <y>150</y>
+      <width>151</width>
+      <height>20</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="affiche">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>150</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Afficher</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>30</y>
+      <width>531</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:18pt; text-decoration: underline; color:#4395c8;&quot;&gt;Recherche par indicatif&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+  </widget>
+  <zorder>frame</zorder>
+  <zorder>label_2</zorder>
+  <zorder>tabl</zorder>
+ </widget>
+ <resources>
+  <include location="ressource3/resources2.qrc"/>
+ </resources>
+ <connections/>
+</ui>

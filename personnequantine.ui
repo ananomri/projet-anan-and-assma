@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>w12</class>
+ <widget class="QWidget" name="w12">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>565</width>
+    <height>420</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QTableWidget" name="tabl">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>180</y>
+     <width>361</width>
+     <height>192</height>
+    </rect>
+   </property>
+   <column>
+    <property name="text">
+     <string>CIN</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Nom</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Prenom</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Tel</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Nat</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>date Infection</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Jour Q</string>
+    </property>
+   </column>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>50</y>
+     <width>381</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;la liste des personnes en quarantine&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="affiche">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>140</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>afficher</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

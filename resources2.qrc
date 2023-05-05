@@ -1,0 +1,9 @@
+<RCC>
+  <qresource prefix="iconneess">
+    <file>im3.jpeg</file>
+    <file>ajouter.png</file>
+    <file>ajoutermaladie.png</file>
+    <file>backgr.jfif</file>
+  </qresource>
+  <qresource prefix="newPrefix"/>
+</RCC>
