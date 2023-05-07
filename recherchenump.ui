@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1014</width>
-    <height>491</height>
+    <width>1307</width>
+    <height>799</height>
    </rect>
   </property>
   <property name="minimumSize">
@@ -20,124 +20,27 @@
    <string>Form</string>
   </property>
   <property name="styleSheet">
-   <string notr="true"/>
+   <string notr="true">#w17{
+	border-image: url(im31.png) 0 0 0 0 stretch stretch;
+}</string>
   </property>
-  <widget class="QLabel" name="label">
-   <property name="geometry">
-    <rect>
-     <x>300</x>
-     <y>20</y>
-     <width>511</width>
-     <height>71</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:18pt; color:#4395c8;&quot;&gt;Recherche par numero de telephone&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_2">
-   <property name="geometry">
-    <rect>
-     <x>10</x>
-     <y>120</y>
-     <width>201</width>
-     <height>16</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt; color:#4db3c8;&quot;&gt;saisir le numero de telephone&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-   </property>
-  </widget>
-  <widget class="QLineEdit" name="tel">
-   <property name="geometry">
-    <rect>
-     <x>220</x>
-     <y>120</y>
-     <width>113</width>
-     <height>20</height>
-    </rect>
-   </property>
-  </widget>
-  <widget class="QTableWidget" name="tabl">
-   <property name="geometry">
-    <rect>
-     <x>15</x>
-     <y>250</y>
-     <width>1061</width>
-     <height>281</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">background-color: rgb(217, 234, 255);</string>
-   </property>
-   <column>
-    <property name="text">
-     <string>CIN</string>
-    </property>
-   </column>
-   <column>
-    <property name="text">
-     <string>NOM</string>
-    </property>
-   </column>
-   <column>
-    <property name="text">
-     <string>PRENOM</string>
-    </property>
-   </column>
-   <column>
-    <property name="text">
-     <string>TEL</string>
-    </property>
-   </column>
-   <column>
-    <property name="text">
-     <string>NATIONALITE</string>
-    </property>
-   </column>
-   <column>
-    <property name="text">
-     <string>Nouvelle colonne</string>
-    </property>
-   </column>
-   <column>
-    <property name="text">
-     <string>JOUR</string>
-    </property>
-   </column>
-   <column>
-    <property name="text">
-     <string>MOIS</string>
-    </property>
-   </column>
-   <column>
-    <property name="text">
-     <string>ANNEE</string>
-    </property>
-   </column>
-   <column>
-    <property name="text">
-     <string>DECEDE</string>
-    </property>
-   </column>
-  </widget>
   <widget class="QFrame" name="frame">
    <property name="geometry">
     <rect>
-     <x>0</x>
-     <y>0</y>
+     <x>340</x>
+     <y>60</y>
      <width>16777215</width>
      <height>16777215</height>
     </rect>
    </property>
    <property name="minimumSize">
     <size>
-     <width>16777215</width>
-     <height>16777215</height>
+     <width>0</width>
+     <height>0</height>
     </size>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-image: url(im3.jpeg);</string>
+    <string notr="true"/>
    </property>
    <property name="frameShape">
     <enum>QFrame::StyledPanel</enum>
@@ -145,25 +48,136 @@
    <property name="frameShadow">
     <enum>QFrame::Raised</enum>
    </property>
-   <widget class="QPushButton" name="affiche">
+   <widget class="QWidget" name="verticalLayoutWidget">
     <property name="geometry">
      <rect>
-      <x>380</x>
-      <y>120</y>
-      <width>75</width>
-      <height>23</height>
+      <x>10</x>
+      <y>10</y>
+      <width>1251</width>
+      <height>671</height>
      </rect>
     </property>
-    <property name="text">
-     <string>Afficher</string>
-    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <spacer name="verticalSpacer_2">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeType">
+        <enum>QSizePolicy::Minimum</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>20</width>
+         <height>40</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:18pt; color:#4395c8;&quot;&gt;Recherche par numero de telephone&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QLabel" name="label_2">
+         <property name="text">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt; color:#4db3c8;&quot;&gt;saisir le numero de telephone&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="tel"/>
+       </item>
+       <item>
+        <widget class="QPushButton" name="affiche">
+         <property name="text">
+          <string>Afficher</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <spacer name="verticalSpacer">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeType">
+        <enum>QSizePolicy::Minimum</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>20</width>
+         <height>40</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QTableWidget" name="tabl">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(217, 234, 255);</string>
+       </property>
+       <column>
+        <property name="text">
+         <string>CIN</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>NOM</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>PRENOM</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>TEL</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>NATIONALITE</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>adresse</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>JOUR</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>MOIS</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>ANNEE</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>DECEDE</string>
+        </property>
+       </column>
+      </widget>
+     </item>
+    </layout>
    </widget>
   </widget>
-  <zorder>frame</zorder>
-  <zorder>label</zorder>
-  <zorder>label_2</zorder>
-  <zorder>tel</zorder>
-  <zorder>tabl</zorder>
  </widget>
  <resources>
   <include location="ressource3/resources2.qrc"/>

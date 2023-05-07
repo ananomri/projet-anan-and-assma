@@ -6,19 +6,24 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>496</width>
-    <height>464</height>
+    <width>1108</width>
+    <height>749</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Form</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">#w5{
+	border-image: url(im31.png) 0 0 0 0 stretch stretch;
+}</string>
+  </property>
   <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
-     <x>60</x>
-     <y>30</y>
-     <width>371</width>
+     <x>790</x>
+     <y>70</y>
+     <width>411</width>
      <height>51</height>
     </rect>
    </property>
@@ -29,14 +34,14 @@
   <widget class="QPushButton" name="affiche">
    <property name="geometry">
     <rect>
-     <x>370</x>
-     <y>170</y>
-     <width>75</width>
-     <height>23</height>
+     <x>860</x>
+     <y>320</y>
+     <width>301</width>
+     <height>41</height>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: rgb(77, 179, 200);</string>
+    <string notr="true">background-color: rgb(199, 255, 255);</string>
    </property>
    <property name="text">
     <string>afficher</string>
@@ -45,14 +50,14 @@
   <widget class="QTableWidget" name="tab">
    <property name="geometry">
     <rect>
-     <x>20</x>
-     <y>140</y>
-     <width>256</width>
-     <height>261</height>
+     <x>740</x>
+     <y>370</y>
+     <width>521</width>
+     <height>331</height>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: rgb(77, 179, 200);</string>
+    <string notr="true">background-color: rgb(213, 255, 252);</string>
    </property>
   </widget>
  </widget>

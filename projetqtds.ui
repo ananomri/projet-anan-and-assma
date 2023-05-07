@@ -173,7 +173,6 @@
      <addaction name="actionrecherche_par_une_maladie"/>
      <addaction name="actionrecherche_maladie_d_une_personne"/>
      <addaction name="actionrecherche_le_pourcentage_de_chaque_maladie_2"/>
-     <addaction name="actionrecherche_maladies_de_chaque_personne"/>
     </widget>
     <addaction name="menumise_a_jour"/>
     <addaction name="menurecherche_affichage"/>

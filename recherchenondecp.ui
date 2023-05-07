@@ -6,21 +6,32 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1139</width>
-    <height>524</height>
+    <width>1261</width>
+    <height>792</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Form</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">#w16{
+	border-image: url(im31.png) 0 0 0 0 stretch stretch;
+}</string>
+  </property>
   <widget class="QPushButton" name="affiche">
    <property name="geometry">
     <rect>
-     <x>660</x>
-     <y>100</y>
-     <width>75</width>
-     <height>23</height>
+     <x>790</x>
+     <y>220</y>
+     <width>221</width>
+     <height>31</height>
     </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>100</width>
+     <height>10</height>
+    </size>
    </property>
    <property name="text">
     <string>Affiche</string>
@@ -29,9 +40,9 @@
   <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
-     <x>260</x>
-     <y>20</y>
-     <width>461</width>
+     <x>540</x>
+     <y>110</y>
+     <width>681</width>
      <height>41</height>
     </rect>
    </property>
@@ -39,69 +50,74 @@
     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:18pt; color:#4395c8;&quot;&gt;Recherche des personnes non decedes&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
    </property>
   </widget>
-  <widget class="QTableWidget" name="tabl">
+  <widget class="QWidget" name="gridLayoutWidget">
    <property name="geometry">
     <rect>
-     <x>125</x>
-     <y>171</y>
-     <width>1011</width>
-     <height>351</height>
+     <x>300</x>
+     <y>270</y>
+     <width>1251</width>
+     <height>411</height>
     </rect>
    </property>
-   <property name="styleSheet">
-    <string notr="true">color: rgb(67, 149, 200);
-background-color: rgb(67, 149, 200);</string>
-   </property>
-   <column>
-    <property name="text">
-     <string>CIN</string>
-    </property>
-   </column>
-   <column>
-    <property name="text">
-     <string>NOM</string>
-    </property>
-   </column>
-   <column>
-    <property name="text">
-     <string>PRENOM</string>
-    </property>
-   </column>
-   <column>
-    <property name="text">
-     <string>TEL</string>
-    </property>
-   </column>
-   <column>
-    <property name="text">
-     <string>NATIONALITE</string>
-    </property>
-   </column>
-   <column>
-    <property name="text">
-     <string>AGE</string>
-    </property>
-   </column>
-   <column>
-    <property name="text">
-     <string>JOUR</string>
-    </property>
-   </column>
-   <column>
-    <property name="text">
-     <string>MOIS</string>
-    </property>
-   </column>
-   <column>
-    <property name="text">
-     <string>ANNEE</string>
-    </property>
-   </column>
-   <column>
-    <property name="text">
-     <string>DECEDE</string>
-    </property>
-   </column>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QTableWidget" name="tabl">
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <column>
+       <property name="text">
+        <string>CIN</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>NOM</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>PRENOM</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>TEL</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>NATIONALITE</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>AGE</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>JOUR</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>MOIS</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>ANNEE</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>DECEDE</string>
+       </property>
+      </column>
+     </widget>
+    </item>
+   </layout>
   </widget>
  </widget>
  <resources/>

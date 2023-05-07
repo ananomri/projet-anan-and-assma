@@ -6,12 +6,17 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>575</width>
-    <height>402</height>
+    <width>1181</width>
+    <height>653</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#wnat{
+	border-image: url(im31.png) 0 0 0 0 stretch stretch;
+}</string>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout">
    <item>
@@ -57,6 +62,11 @@
        <property name="insertPolicy">
         <enum>QComboBox::NoInsert</enum>
        </property>
+       <item>
+        <property name="text">
+         <string>tunisie</string>
+        </property>
+       </item>
       </widget>
      </item>
      <item>

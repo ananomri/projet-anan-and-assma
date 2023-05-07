@@ -82,10 +82,11 @@ def affpersonne():
         waffp.tabl.setItem(ligne, 3, QTableWidgetItem(e[1]["tel"]))
         waffp.tabl.setItem(ligne, 4, QTableWidgetItem(e[1]["nationalite"]))
         waffp.tabl.setItem(ligne, 5, QTableWidgetItem(e[1]["age"]))
-        waffp.tabl.setItem(ligne, 6, QTableWidgetItem(e[1]["jour"]))
-        waffp.tabl.setItem(ligne, 7, QTableWidgetItem(e[1]["mois"]))
-        waffp.tabl.setItem(ligne, 8, QTableWidgetItem(e[1]["annee"]))
-        waffp.tabl.setItem(ligne, 9, QTableWidgetItem(e[1]["decede"]))
+        waffp.tabl.setItem(ligne, 6, QTableWidgetItem(e[1]["adresse"]))
+        waffp.tabl.setItem(ligne, 7, QTableWidgetItem(e[1]["jour"]))
+        waffp.tabl.setItem(ligne, 8, QTableWidgetItem(e[1]["mois"]))
+        waffp.tabl.setItem(ligne, 9, QTableWidgetItem(e[1]["annee"]))
+        waffp.tabl.setItem(ligne, 10, QTableWidgetItem(e[1]["decede"]))
 ##############affpersonne_tel*****************###########
 
 
@@ -310,28 +311,31 @@ def affpersonne_decede():
             w13.tabl.setItem(ligne, 7, QTableWidgetItem(e[1]["mois"]))
             w13.tabl.setItem(ligne, 8, QTableWidgetItem(e[1]["annee"]))
             w13.tabl.setItem(ligne, 9, QTableWidgetItem(e[1]["decede"]))
+            ligne += 1
+
 #######affpersonne_non_decede#########
 
 
 def affpersonne_non_decede():
     f = "personne.csv"
     d = loader.chargement(f)
-    w13.tabl.setRowCount(0)
+    w16.tabl.setRowCount(0)
     ligne = 0
     for e in d.items():
         if e[1]["decede"] == "0":
-            w13.tabl.insertRow(ligne)
-            w13.tabl.setItem(ligne, 0, QTableWidgetItem(e[0]))
-            w13.tabl.setItem(ligne, 1, QTableWidgetItem(e[1]["nom"]))
-            w13.tabl.setItem(ligne, 2, QTableWidgetItem(e[1]["prenom"]))
-            w13.tabl.setItem(ligne, 3, QTableWidgetItem(e[1]["tel"]))
-            w13.tabl.setItem(ligne, 4, QTableWidgetItem(e[1]["nationalite"]))
-            w13.tabl.setItem(ligne, 5, QTableWidgetItem(e[1]["age"]))
-            w13.tabl.setItem(ligne, 6, QTableWidgetItem(e[1]["jour"]))
-            w13.tabl.setItem(ligne, 7, QTableWidgetItem(e[1]["mois"]))
-            w13.tabl.setItem(ligne, 8, QTableWidgetItem(e[1]["annee"]))
-            w13.tabl.setItem(ligne, 9, QTableWidgetItem(e[1]["decede"]))
+            w16.tabl.insertRow(ligne)
+            w16.tabl.setItem(ligne, 0, QTableWidgetItem(e[0]))
+            w16.tabl.setItem(ligne, 1, QTableWidgetItem(e[1]["nom"]))
+            w16.tabl.setItem(ligne, 2, QTableWidgetItem(e[1]["prenom"]))
+            w16.tabl.setItem(ligne, 3, QTableWidgetItem(e[1]["tel"]))
+            w16.tabl.setItem(ligne, 4, QTableWidgetItem(e[1]["nationalite"]))
+            w16.tabl.setItem(ligne, 5, QTableWidgetItem(e[1]["age"]))
+            w16.tabl.setItem(ligne, 6, QTableWidgetItem(e[1]["jour"]))
+            w16.tabl.setItem(ligne, 7, QTableWidgetItem(e[1]["mois"]))
+            w16.tabl.setItem(ligne, 8, QTableWidgetItem(e[1]["annee"]))
+            w16.tabl.setItem(ligne, 9, QTableWidgetItem(e[1]["decede"]))
             ligne += 1
+
 ##########supprimerm###########
 
 
@@ -644,7 +648,7 @@ wrm = loadUi("recherchemalpersonne.ui")
 w18 = loadUi("rechercheparmaladuie.ui")
 w19 = loadUi("recherchepourcentage.ui")
 ws = loadUi("suppmaladie.ui")
-wnat = loadUi("afficheparnatio.ui")
+wnat = loadUi("recherchenatiop.ui")
 
 
 def afficherDeces():
@@ -655,7 +659,7 @@ def afficherDeces():
 def affnatio2():
     global countries
     wnat.showMaximized()
-    fillComboBox(wnat.natComboBox, countries)
+    fillComboBox(wnat.nat, countries)
     wnat.affiche.clicked.connect(afficherMalParNat)
 
 
@@ -697,7 +701,7 @@ def mofifann():
 def affnatiop():
     global e
     global countries
-    fillComboBox(wnat.natComboBox, countries)
+    fillComboBox(wnat.nat, countries)
     wnat.showMaximized()
     wnat.affiche.clicked.connect(affpersonne_nationalite)
 
